@@ -1,14 +1,14 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Jan 13 2022 00:33:37 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="61ddf1294451281500f4d63e" data-wf-site="61d54ab5e0279113fb99a417">
+<!--  Last Published: Fri Jan 14 2022 19:05:06 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="61e06a693b7be0eb2d712ba7" data-wf-site="61d54ab5e0279113fb99a417">
 <head>
   <meta charset="utf-8">
   <title>AVP Scores</title>
-  <meta content="Description of waveSurface.com development" name="description">
+  <meta content="Description of AVP Scores development" name="description">
   <meta content="AVP Scores" property="og:title">
-  <meta content="Description of waveSurface.com development" property="og:description">
+  <meta content="Description of AVP Scores development" property="og:description">
   <meta content="AVP Scores" property="twitter:title">
-  <meta content="Description of waveSurface.com development" property="twitter:description">
+  <meta content="Description of AVP Scores development" property="twitter:description">
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -31,33 +31,45 @@
   <!--  *1 end -->
 </head>
 <body class="body-2">
-  <div class="header-image wf-section"></div>
+  <div class="background-header avpscores-background wf-section">
+    <div class="scroll-promt">
+      <p class="scroll-test">Scroll<br><span style="-webkit-transform:translate3d(null, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="scroll-arrow"></span></p>
+    </div>
+    <a href="https://t.me/AvpScores_bot" target="_blank" class="link-block w-inline-block">
+      <div class="visit-border">
+        <div class="visit">Visit</div>
+      </div>
+    </a>
+  </div>
   <div class="content-section wf-section">
     <a href="index.html" class="hollow-button mobile-top">❮   all Projects</a>
     <div class="w-container">
       <div class="columns w-row">
-        <div data-w-id="2a6e89e8-f859-b8fa-6300-e48fbf374e48" class="article-body-column w-col w-col-8">
+        <div data-w-id="2a6e89e8-f859-b8fa-6300-e48fbf374e48" style="opacity:0" class="article-body-column w-col w-col-8">
           <h1 class="article-heading">
-            <a href="http://wavesurface.com" target="_blank" class="title-link">waveSurface.com</a>
+            <a href="https://t.me/AvpScores_bot" target="_blank" class="title-link">AVP Scores</a>
           </h1>
-          <p class="subtitle-icons">  </p>
-          <h2>What is this site?</h2>
-          <p>  This site serves as a resource platform for sheetwave construction. Since that&#x27;s what I spent the last couple years doing, I wanted to create a site to centralize all the information I have and will continue to gather and make it available to anyone interested. The subject gave me a focal point to learn to construct a web platform around as I was teaching myself to code.<br>  A key feature leverages Slack API&#x27;s to interact directly with a client interface hosted on the site. Slack Web API to deliver to slack workspace, Slack Events API to listen for workspace triggers. Verified users can submit quesitons from the site directly to a slack workspace. Inside slack instructionals can be compiled and deployed to the site as JSON allowing slack to be used as a primitive CMS to push site content to a postgres database.</p><img src="images/waveSurface.com-flowChart.drawio.svg" loading="lazy" alt="wave surface site flow chart
-">
+          <p class="subtitle-icons"> </p>
+          <h2>What is this app?</h2>
+          <p>As someone interested in AVP beach volleyball, It&#x27;s a way to stay informed on how a tournament is progressing without having to constantly check in on the avp website throughout the weekend. By polling the official AVP API, results can be delivered in real time to a users cell phone via the free Telegram app. embedded links to the live avp bracket as well as the network broadcast make the app a convenient touch point for all live AVP content.<br>Coded entirely in python and built for Twilio updates, the <a href="https://avp-scores.herokuapp.com/about" target="_blank" class="link-2">original version</a> of the application required a python/flask interface to handle user onboarding and a Postgres database to store user information. Migrating to Telegrams powerful bot API removed the need for a client server and user database store. Telegram messanger allows this service to be completely free of charge and easy to implement rich interactive features in the future.<br>Telegram users opt in/out with native Telegram user ID. opt-in users and tournament state are stored in a postgres database. When matches are discovered to be be finished, Tournament information is parsed into a result message and sent to each user. when users opt-out, their they are removed from the database completely.</p><img class="project-image" src="images/AVP-Poller.drawio.png" width="642" alt="poll_and_merge cycle diagram" style="opacity:0" sizes="(max-width: 767px) 92vw, (max-width: 991px) 478.66668701171875px, 620px" data-w-id="dca1241c-f009-b176-ff3a-3558fb985ed3" loading="lazy" srcset="images/AVP-Poller.drawio-p-500.png 500w, images/AVP-Poller.drawio-p-800.png 800w, images/AVP-Poller.drawio.png 833w">
           <h4 class="heading">Tech used</h4>
-          <p>waveSurface.com is a full stack application written in React styled with Material UI components, a Node/Express backend with Postgres Database.</p>
-          <p>The site uses bcrypt for password hashing, JWT authorization for multi-tier login permissions and site access.</p>
-          <p>Front End was bootstrapped with with Create React App, React Hooks and fully client side rendered with react router. State is partially managed in Redux and Context. Client deployed with surge.sh</p>
+          <p>AVP Scores is a flask server application written in python with a Postgres database, Client side is handled via Telegram messenger via the Telegram bot API</p>
+          <p>Polling is handled by Advanced Python Scheduler. Match data is polled from the AVP API. Message deliver and onboarding are handled with Telegram Bot API</p>
           <p>Routes were tested with Postman.</p>
-          <h4 class="heading-2">Build Dependencies Front End</h4>
-          <p class="dependencies">&quot;dependencies&quot;<strong>:</strong> {   <br>   &quot;@material-ui/core&quot;<strong>:</strong> &quot;^4.11.3&quot;<strong>,</strong>   <br>   &quot;@material-ui/data-grid&quot;<strong>:</strong> &quot;^4.0.0-alpha.26&quot;<strong>,<br>‍</strong>    &quot;@material-ui/icons&quot;<strong>:</strong> &quot;^4.11.2&quot;<strong>,<br>‍</strong>    &quot;@material-ui/lab&quot;<strong>:</strong> &quot;^4.0.0-alpha.58&quot;<strong>,<br>‍</strong>    &quot;@testing-library/jest-dom&quot;<strong>:</strong> &quot;^5.11.10&quot;<strong>,<br>‍</strong>    &quot;@testing-library/react&quot;<strong>:</strong> &quot;^11.2.6&quot;<strong>,<br>‍</strong>    &quot;@testing-library/user-event&quot;<strong>:</strong> &quot;^12.8.3&quot;<strong>,<br>‍</strong>    &quot;axios&quot;<strong>:</strong> &quot;^0.21.1&quot;<strong>,<br>‍</strong>    &quot;json-server&quot;<strong>:</strong> &quot;^0.16.3&quot;<strong>,<br>‍</strong>    &quot;jsonwebtoken&quot;<strong>:</strong> &quot;^8.5.1&quot;<strong>,<br>‍</strong>    &quot;markdown-to-jsx&quot;<strong>:</strong> &quot;^7.1.2&quot;<strong>,<br>‍</strong>    &quot;react&quot;<strong>:</strong> &quot;^17.0.2&quot;<strong>,<br>‍</strong>    &quot;react-dom&quot;<strong>:</strong> &quot;^17.0.2&quot;<strong>,<br>‍</strong>    &quot;react-dropzone&quot;<strong>:</strong> &quot;^11.3.2&quot;<strong>,<br>‍</strong>    &quot;react-lottie&quot;<strong>:</strong> &quot;^1.2.3&quot;<strong>,<br>‍</strong>    &quot;react-redux&quot;<strong>:</strong> &quot;^7.2.3&quot;<strong>,<br>‍</strong>    &quot;react-router-dom&quot;<strong>:</strong> &quot;^5.2.0&quot;<strong>,<br>‍</strong>    &quot;react-scripts&quot;<strong>:</strong> &quot;4.0.3&quot;<strong>,<br>‍</strong>    &quot;react-scroll&quot;<strong>:</strong> &quot;^1.8.2&quot;<strong>,<br>‍</strong>    &quot;redux&quot;<strong>:</strong> &quot;^4.0.5&quot;<strong>,<br>‍</strong>    &quot;redux-devtools-extension&quot;<strong>:</strong> &quot;^2.13.9&quot;<strong>,<br>‍</strong>    &quot;redux-thunk&quot;<strong>:</strong> &quot;^2.3.0&quot;<strong>,<br>‍</strong>    &quot;uuid&quot;<strong>:</strong> &quot;^8.3.2&quot;<strong>,<br>‍</strong>    &quot;vanta&quot;<strong>:</strong> &quot;^0.5.21&quot;<strong>,<br>‍</strong>    &quot;web-vitals&quot;<strong>:</strong> &quot;^1.1.1&quot; <br> }<strong>,</strong><br></p>
-          <h4 class="heading-2">Build Dependencies Back End</h4>
-          <p class="dependencies">&quot;dependencies&quot;<strong>:</strong> {<br>    &quot;@slack/events-api&quot;<strong>:</strong> &quot;^3.0.0&quot;<strong>,<br>‍</strong>    &quot;@slack/web-api&quot;<strong>:</strong> &quot;^6.1.0&quot;<strong>,<br>‍</strong>    &quot;@slack/webhook&quot;<strong>:</strong> &quot;^6.0.0&quot;<strong>,<br>‍</strong>    &quot;bcrypt&quot;<strong>:</strong> &quot;^5.0.1&quot;<strong>,<br>‍</strong>    &quot;colors&quot;<strong>:</strong> &quot;^1.4.0&quot;<strong>,<br>‍</strong>    &quot;cors&quot;<strong>:</strong> &quot;^2.8.5&quot;<strong>,<br>‍</strong>    &quot;dotenv&quot;<strong>:</strong> &quot;^8.2.0&quot;<strong>,<br>‍</strong>    &quot;express&quot;<strong>:</strong> &quot;^4.17.1&quot;<strong>,<br>‍</strong>    &quot;express-fileupload&quot;<strong>:</strong> &quot;^1.2.1&quot;<strong>,<br>‍</strong>    &quot;jsonschema&quot;<strong>:</strong> &quot;^1.4.0&quot;<strong>,<br>‍</strong>    &quot;jsonwebtoken&quot;<strong>:</strong> &quot;^8.5.1&quot;<strong>,<br>‍</strong>    &quot;morgan&quot;<strong>:</strong> &quot;^1.10.0&quot;<strong>,<br>‍</strong>    &quot;pg&quot;<strong>:</strong> &quot;^8.5.1&quot; <br> }<br></p>
+          <p>Twilio &amp; Sendgrid integrations were removed from project.</p><img class="project-image" src="images/scores-menu.PNG" width="642" alt="avp scores menu example image
+" style="opacity:0" sizes="(max-width: 767px) 92vw, (max-width: 991px) 478.66668701171875px, 620px" data-w-id="bfd2bdfe-b331-fab1-bd3c-50a9c252c1d4" loading="lazy" srcset="images/scores-menu-p-500.png 500w, images/scores-menu-p-800.png 800w, images/scores-menu-p-1080.png 1080w, images/scores-menu-p-1600.png 1600w, images/scores-menu-p-2000.png 2000w, images/scores-menu.PNG 2532w">
+          <h4 class="heading-2">Build Dependencies</h4>
+          <p class="dependencies">requirements.txt : <br>‍<br>amqp<strong>==</strong>2.6.1<br>appnope<strong>==</strong>0.1.0<br>APScheduler<strong>==</strong>3.6.3<br>backcall<strong>==</strong>0.1.0<br>bcrypt<strong>==</strong>3.1.4<br>beautifulsoup4<strong>==</strong>4.9.1<br>billiard<strong>==</strong>3.6.3.0<br>blinker<strong>==</strong>1.4<br>certifi<strong>==</strong>2020.6.20<br>cffi<strong>==</strong>1.11.5<br>chardet<strong>==</strong>3.0.4<br>Click<strong>==</strong>7.0<br>decorator<strong>==</strong>4.3.0<br>Faker<strong>==</strong>0.9.1<br>Flask<strong>==</strong>1.0.2<br>Flask-Bcrypt<strong>==</strong>0.7.1<br>Flask-DebugToolbar<strong>==</strong>0.10.1<br>Flask-Markdown<strong>==</strong>0.3<br>Flask-SQLAlchemy<strong>==</strong>2.3.2<br>Flask-WTF<strong>==</strong>0.14.2<br>gunicorn<strong>==</strong>20.0.4<br>idna<strong>==</strong>2.10<br>importlib-metadata<strong>==</strong>1.7.0<br>infinity<strong>==</strong>1.5<br>intervals<strong>==</strong>0.9.0<br>ipython<strong>==</strong>7.0.1<br>ipython-genutils<strong>==</strong>0.2.0<br>itsdangerous<strong>==</strong>0.24<br>jedi<strong>==</strong>0.13.1<br>Jinja2<strong>==</strong>2.10<br>kombu<strong>==</strong>4.6.11<br>Markdown<strong>==</strong>3.2.2<br>MarkupSafe<strong>==</strong>1.1.1<br>parso<strong>==</strong>0.3.1<br>pexpect<strong>==</strong>4.6.0<br>phonenumbers<strong>==</strong>8.12.9<br>pickleshare<strong>==</strong>0.7.5<br>polling2<strong>==</strong>0.4.5<br>prompt-toolkit<strong>==</strong>2.0.5<br>psycopg2-binary<strong>==</strong>2.8.4<br>ptyprocess<strong>==</strong>0.6.0<br>pycparser<strong>==</strong>2.19<br>Pygments<strong>==</strong>2.2.0<br>pyTelegramBotAPI<strong>==</strong>3.8.3<br>python-dateutil<strong>==</strong>2.7.3<br>python-dotenv<strong>==</strong>0.14.0<br>python-http-client<strong>==</strong>3.3.1<br>pytz<strong>==</strong>2020.1<br>requests<strong>==</strong>2.24.0<br>sendgrid<strong>==</strong>6.4.6<br>simplegeneric<strong>==</strong>0.8.1<br>six<strong>==</strong>1.11.0<br>soupsieve<strong>==</strong>2.0.1<br>SQLAlchemy<strong>==</strong>1.2.12<br>SQLAlchemy-Utils<strong>==</strong>0.36.8<br>starkbank-ecdsa<strong>==</strong>1.0.0<br>text-unidecode<strong>==</strong>1.2<br>traitlets<strong>==</strong>4.3.2<br>tzlocal<strong>==</strong>2.1<br>urllib3<strong>==</strong>1.25.10<br>validators<strong>==</strong>0.18.0<br>vine<strong>==</strong>1.3.0<br>wcwidth<strong>==</strong>0.1.7<br>Werkzeug<strong>==</strong>0.14.1<br>WTForms<strong>==</strong>2.2.1<br>WTForms-Alchemy<strong>==</strong>0.17.0<br>WTForms-Components<strong>==</strong>0.10.4<br>xmltodict<strong>==</strong>0.12.0<br>zipp<strong>==</strong>3.1.0<br></p>
           <h4 class="heading-2">More Details</h4>
-          <p>I wanted different user permissions to have some ability to manually control access to different sections. There are basic, Full Access and Admin levels of authorizaiton. Permissions are stored in localstroage with JSON Web Tokens.<br></p>
-          <p>Users, instructionals and sections are stored in a relational postgres database and calls are made with a custom axios class and static methods. Instructionals are generated with JSON objects sent from slack where links and files are hosted.</p>
-          <p>I relied heavily on Material UI for styling. I did this for speed and didn&#x27;t want to spend a lot of time making the interface &#x27;pretty&#x27;, for me it was worth the performance cost to accomplish the goals of this application as well as get some experience with a popular component library.</p>
-          <p>As a client side render I opted to use redux as well as native context for state managment. I wanted to get experience using both and discover how they were different.<br></p>
+          <div class="w-richtext">
+            <p>The application relies on 4 unique polling functions during operation.</p>
+            <ol start="" role="list">
+              <li>weekly_poll(): This polls the AVP API weekly to see if tournament matches have been scheduled for the next event.</li>
+              <li>in_progress_poll(): This increases the polling to a high frequency when a tournament is discovered to be in progress.</li>
+              <li>heroku_poll(): This pings the heroku server and prevents it from sleeping during the season</li>
+              <li>start_pulse(): This sends a message to telegram admin letting them know that the server is still running.</li>
+            </ol>
+          </div>
         </div>
         <div class="author-column w-col w-col-4">
           <a href="index.html" class="hollow-button">❮   all Projects</a><img src="images/IMG_5342.JPG" width="125" sizes="125px" srcset="images/IMG_5342-p-500.jpeg 500w, images/IMG_5342-p-800.jpeg 800w, images/IMG_5342.JPG 849w" alt="picture of Brett" class="author-image">
@@ -80,9 +92,6 @@
       <a href="about.html" class="footer-link">about</a>
       <a href="/subscribe" class="footer-link">subscribe</a>
     </div>
-  </div>
-  <div class="visit-container w-container">
-    <div class="w-embed"></div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61d54ab5e0279113fb99a417" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
