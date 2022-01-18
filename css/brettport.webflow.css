@@ -539,7 +539,7 @@ a {
 }
 
 .background-header.wavesurface-background {
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.3)), url('../images/waveSurfacePreview.jpg');
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.3)), url('../images/Screen-Shot-2022-01-17-at-3.32.37-PM.png');
 }
 
 .background-header.mysort-background {
@@ -824,6 +824,11 @@ a {
 .thumbnail-title.telegram {
   color: #fff;
   font-size: 40px;
+}
+
+.thumbnail-title.marine-harness {
+  display: block;
+  line-height: 35px;
 }
 
 .visit-container {
