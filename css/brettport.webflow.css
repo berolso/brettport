@@ -539,11 +539,15 @@ a {
 }
 
 .background-header.wavesurface-background {
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.3)), url('../images/Screen-Shot-2022-01-17-at-3.32.37-PM.png');
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.3)), url('../images/waveSurfacePreview.jpg');
 }
 
 .background-header.mysort-background {
   background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.3)), url('../images/MySort-background.png');
+}
+
+.background-header.marine-harness-background {
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.3)), url('../images/Screen-Shot-2022-01-17-at-3.32.37-PM.png');
 }
 
 .content-section {
