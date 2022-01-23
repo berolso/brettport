@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Jan 19 2022 00:47:50 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Jan 23 2022 07:17:15 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61e06a693b7be0eb2d712ba7" data-wf-site="61d54ab5e0279113fb99a417">
 <head>
   <meta charset="utf-8">
@@ -41,7 +41,7 @@
       </div>
     </a>
   </div>
-  <div class="content-section wf-section">
+  <div id="content" class="content-section wf-section">
     <a href="index.html" class="hollow-button mobile-top">❮   all Projects</a>
     <div class="w-container">
       <div class="columns w-row">
@@ -51,13 +51,13 @@
           </h1>
           <p class="subtitle-icons"> </p>
           <h2>What is this app?</h2>
-          <p>As someone interested in AVP beach volleyball, It&#x27;s a way to stay informed on how a tournament is progressing without having to constantly check in on the avp website throughout the weekend. By polling the official AVP API, results can be delivered in real time to a users cell phone via the free Telegram app. embedded links to the live avp bracket as well as the network broadcast make the app a convenient touch point for all live AVP content.<br>Coded entirely in python and built for Twilio updates, the <a href="https://avp-scores.herokuapp.com/about" target="_blank" class="link-2">original version</a> of the application required a python/flask interface to handle user onboarding and a Postgres database to store user information. Migrating to Telegrams powerful bot API removed the need for a client server and user database store. Telegram messanger allows this service to be completely free of charge and easy to implement rich interactive features in the future.<br>Telegram users opt in/out with native Telegram user ID. opt-in users and tournament state are stored in a postgres database. When matches are discovered to be be finished, Tournament information is parsed into a result message and sent to each user. when users opt-out, their they are removed from the database completely.</p><img class="project-image" src="images/AVP-Poller.drawio.png" width="642" alt="poll_and_merge cycle diagram" style="opacity:0" sizes="(max-width: 767px) 92vw, (max-width: 991px) 478.66668701171875px, 620px" data-w-id="dca1241c-f009-b176-ff3a-3558fb985ed3" loading="lazy" srcset="images/AVP-Poller.drawio-p-500.png 500w, images/AVP-Poller.drawio-p-800.png 800w, images/AVP-Poller.drawio.png 833w">
+          <p>As someone interested in AVP beach volleyball, It&#x27;s a way to stay informed on how a tournament is progressing without having to constantly check in on the avp website throughout the weekend. By polling the official AVP API, results can be delivered in real time to a users cell phone via the free Telegram app. embedded links to the live avp bracket as well as the network broadcast make the app a convenient touch point for all live AVP content.<br>Coded entirely in python and built for Twilio updates, the <a href="https://avp-scores.herokuapp.com/about" target="_blank" class="link-2">original version</a> of the application required a python/flask interface to handle user onboarding and a Postgres database to store user information. Migrating to Telegrams powerful bot API removed the need for a client server and user database store. Telegram messanger allows this service to be completely free of charge and easy to implement rich interactive features in the future.<br>Telegram users opt in/out with native Telegram user ID. opt-in users and tournament state are stored in a postgres database. When matches are discovered to be be finished, Tournament information is parsed into a result message and sent to each user. when users opt-out, their they are removed from the database completely.</p><img class="project-image" src="images/AVP-Poller.drawio.png" width="642" alt="poll_and_merge cycle diagram" style="opacity:0" sizes="(max-width: 767px) 92vw, (max-width: 991px) 478.65625px, 619.984375px" data-w-id="dca1241c-f009-b176-ff3a-3558fb985ed3" loading="lazy" srcset="images/AVP-Poller.drawio-p-500.png 500w, images/AVP-Poller.drawio-p-800.png 800w, images/AVP-Poller.drawio.png 833w">
           <h4 class="heading">Tech used</h4>
           <p>AVP Scores is a flask server application written in python with a Postgres database, Client side is handled via Telegram messenger via the Telegram bot API</p>
           <p>Polling is handled by Advanced Python Scheduler. Match data is polled from the AVP API. Message deliver and onboarding are handled with Telegram Bot API</p>
           <p>Routes were tested with Postman.</p>
           <p>Twilio &amp; Sendgrid integrations were removed from project.</p><img class="project-image" src="images/scores-menu.PNG" width="642" alt="avp scores menu example image
-" style="opacity:0" sizes="(max-width: 767px) 92vw, (max-width: 991px) 478.66668701171875px, 620px" data-w-id="bfd2bdfe-b331-fab1-bd3c-50a9c252c1d4" loading="lazy" srcset="images/scores-menu-p-500.png 500w, images/scores-menu-p-800.png 800w, images/scores-menu-p-1080.png 1080w, images/scores-menu-p-1600.png 1600w, images/scores-menu-p-2000.png 2000w, images/scores-menu.PNG 2532w">
+" style="opacity:0" sizes="(max-width: 767px) 92vw, (max-width: 991px) 478.65625px, 619.984375px" data-w-id="bfd2bdfe-b331-fab1-bd3c-50a9c252c1d4" loading="lazy" srcset="images/scores-menu-p-500.png 500w, images/scores-menu-p-800.png 800w, images/scores-menu-p-1080.png 1080w, images/scores-menu-p-1600.png 1600w, images/scores-menu-p-2000.png 2000w, images/scores-menu.PNG 2532w">
           <h4 class="heading-2">Build Dependencies</h4>
           <p class="dependencies">requirements.txt : <br>‍<br>amqp<strong>==</strong>2.6.1<br>appnope<strong>==</strong>0.1.0<br>APScheduler<strong>==</strong>3.6.3<br>backcall<strong>==</strong>0.1.0<br>bcrypt<strong>==</strong>3.1.4<br>beautifulsoup4<strong>==</strong>4.9.1<br>billiard<strong>==</strong>3.6.3.0<br>blinker<strong>==</strong>1.4<br>certifi<strong>==</strong>2020.6.20<br>cffi<strong>==</strong>1.11.5<br>chardet<strong>==</strong>3.0.4<br>Click<strong>==</strong>7.0<br>decorator<strong>==</strong>4.3.0<br>Faker<strong>==</strong>0.9.1<br>Flask<strong>==</strong>1.0.2<br>Flask-Bcrypt<strong>==</strong>0.7.1<br>Flask-DebugToolbar<strong>==</strong>0.10.1<br>Flask-Markdown<strong>==</strong>0.3<br>Flask-SQLAlchemy<strong>==</strong>2.3.2<br>Flask-WTF<strong>==</strong>0.14.2<br>gunicorn<strong>==</strong>20.0.4<br>idna<strong>==</strong>2.10<br>importlib-metadata<strong>==</strong>1.7.0<br>infinity<strong>==</strong>1.5<br>intervals<strong>==</strong>0.9.0<br>ipython<strong>==</strong>7.0.1<br>ipython-genutils<strong>==</strong>0.2.0<br>itsdangerous<strong>==</strong>0.24<br>jedi<strong>==</strong>0.13.1<br>Jinja2<strong>==</strong>2.10<br>kombu<strong>==</strong>4.6.11<br>Markdown<strong>==</strong>3.2.2<br>MarkupSafe<strong>==</strong>1.1.1<br>parso<strong>==</strong>0.3.1<br>pexpect<strong>==</strong>4.6.0<br>phonenumbers<strong>==</strong>8.12.9<br>pickleshare<strong>==</strong>0.7.5<br>polling2<strong>==</strong>0.4.5<br>prompt-toolkit<strong>==</strong>2.0.5<br>psycopg2-binary<strong>==</strong>2.8.4<br>ptyprocess<strong>==</strong>0.6.0<br>pycparser<strong>==</strong>2.19<br>Pygments<strong>==</strong>2.2.0<br>pyTelegramBotAPI<strong>==</strong>3.8.3<br>python-dateutil<strong>==</strong>2.7.3<br>python-dotenv<strong>==</strong>0.14.0<br>python-http-client<strong>==</strong>3.3.1<br>pytz<strong>==</strong>2020.1<br>requests<strong>==</strong>2.24.0<br>sendgrid<strong>==</strong>6.4.6<br>simplegeneric<strong>==</strong>0.8.1<br>six<strong>==</strong>1.11.0<br>soupsieve<strong>==</strong>2.0.1<br>SQLAlchemy<strong>==</strong>1.2.12<br>SQLAlchemy-Utils<strong>==</strong>0.36.8<br>starkbank-ecdsa<strong>==</strong>1.0.0<br>text-unidecode<strong>==</strong>1.2<br>traitlets<strong>==</strong>4.3.2<br>tzlocal<strong>==</strong>2.1<br>urllib3<strong>==</strong>1.25.10<br>validators<strong>==</strong>0.18.0<br>vine<strong>==</strong>1.3.0<br>wcwidth<strong>==</strong>0.1.7<br>Werkzeug<strong>==</strong>0.14.1<br>WTForms<strong>==</strong>2.2.1<br>WTForms-Alchemy<strong>==</strong>0.17.0<br>WTForms-Components<strong>==</strong>0.10.4<br>xmltodict<strong>==</strong>0.12.0<br>zipp<strong>==</strong>3.1.0<br></p>
           <h4 class="heading-2">More Details</h4>
@@ -95,6 +95,13 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61d54ab5e0279113fb99a417" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->//scroll to section on load
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $("html, body").animate({ 
+          scrollTop: $('#content').offset().top 
+      }, 1500,'swing');
+  });
+</script>
 </body>
 </html>
